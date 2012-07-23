@@ -1,4 +1,4 @@
-timeline
+Timeline
 ========
 
 JQuery Timeline Plugin
