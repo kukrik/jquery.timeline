@@ -3,7 +3,9 @@ Timeline
 
 JQuery Timeline Plugin
 
-Licence
+This plugin is a wrapper for CHAP Link Library's Timeline.
+
+License
 =======
 
-timeline is licensed under the Apache License 2.0. The project is founded by Nilesh N. Mali
+Timeline is licensed under the Apache License 2.0. The project is founded by Nilesh N. Mali

@@ -1,26 +1,168 @@
 .ui-timeline-container {
-    background-color: #ffffff;
-    border: 1px solid #cccccc;
     padding-top: 7px;
     padding-bottom: 7px;
     margin: 0 !important;
     clear: both;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.25) !important;
-    -moz-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.25) !important;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25) !important;
     overflow: hidden;
 }
 
-.ui-timeline-grid {
-    border: 1px solid #ccc;
-    border-width: 1px 0 0 1px;
+.ui-timeline-frame {
+    /*border: 1px solid #BEBEBE;*/
+    overflow: hidden;
 }
 
-.ui-timeline-grid div {
-    border: 1px solid #ccc;
-    border-width: 0 1px 1px 0;
+.ui-timeline-axis {
+    /*border-color: #BEBEBE;*/
+    border-width: 1px;
+    border-top-style: solid;
+}
+.ui-timeline-axis-grid {
+    border-left-style: solid;
+    border-width: 1px;
+}
+.ui-timeline-axis-grid-minor {
+    /*border-color: #e5e5e5;*/
+}
+.ui-timeline-axis-grid-major {
+    /*border-color: #bfbfbf;*/
+}
+.ui-timeline-axis-text {
+    /*color: #4D4D4D;*/
+    padding: 3px;
+    white-space: nowrap;
+}
+
+.ui-timeline-axis-text-minor {
+}
+
+.ui-timeline-axis-text-major {
+}
+
+.ui-timeline-event {
+    display: inline-block;
+}
+
+.ui-timeline-event-selected {
+    /*border-color: #FFC200;*/
+    /*background-color: #FFF785;*/
+    /*z-index: 999;*/
+}
+
+
+.ui-timeline-event-box {
+    text-align: center;
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
+    /*border-radius: 5px;*/
+    /*-moz-border-radius: 5px; *//* For Firefox 3.6 and older */
+}
+
+.ui-timeline-event-dot {
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;  /* For Firefox 3.6 and older */
+}
+
+.ui-timeline-event-range {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;  /* For Firefox 3.6 and older */
+}
+
+.ui-timeline-event-range-drag-left {
+    cursor: w-resize;
+    z-index: 1000;
+}
+
+.ui-timeline-event-range-drag-right {
+    cursor: e-resize;
+    z-index: 1000;
+}
+
+
+.ui-timeline-event-line {
+    border-left-width: 1px;
+    border-left-style: solid;
+}
+
+.ui-timeline-event-content {
+    margin: 5px;
+    white-space: nowrap;
+    font-weight: normal;
+    font-size: 0.8em;
+    overflow: hidden;
+}
+
+.ui-timeline-groups-axis {
+    /*border-color: #BEBEBE;*/
+    border-width: 1px;
+}
+.ui-timeline-groups-text {
+    /*color: #4D4D4D;*/
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.ui-timeline-currenttime {
+    background-color: #FF7F6E;
+    width: 2px;
+}
+
+.ui-timeline-customtime {
+    background-color: #6E94FF;
+    width: 2px;
+    cursor: move;
+}
+
+.ui-timeline-navigation {
+    /*font-family: arial;*/
+    font-size: 20px;
+    font-weight: bold;
+    /*color: gray;*/
+
+    /*border: 1px solid #BEBEBE;*/
+    /*background-color: #F5F5F5;*/
+    border-radius: 2px;
+    -moz-border-radius: 2px;  /* For Firefox 3.6 and older */
+}
+
+.ui-timeline-navigation-new, .ui-timeline-navigation-delete,
+.ui-timeline-navigation-zoom-in,  .ui-timeline-navigation-zoom-out,
+.ui-timeline-navigation-move-left, .ui-timeline-navigation-move-right {
+    cursor: pointer;
+    padding: 10px 10px;
     float: left;
-}​
+    text-decoration: none;
+    /*border-color: #BEBEBE; *//* border is used for the separator between new and navigation buttons */
+
+    width: 16px;
+    height: 16px;
+}
+
+/*div.timeline-navigation-new {*/
+    /*background: url('img/16/new.png') no-repeat center;*/
+/*}*/
+
+/*div.timeline-navigation-delete {*/
+    /*padding: 0px;*/
+    /*padding-left: 5px;*/
+    /*background: url('img/16/delete.png') no-repeat center;*/
+/*}*/
+
+/*div.timeline-navigation-zoom-in {*/
+    /*background: url('img/16/zoomin.png') no-repeat center;*/
+/*}*/
+
+/*div.timeline-navigation-zoom-out {*/
+    /*background: url('img/16/zoomout.png') no-repeat center;*/
+/*}*/
+
+/*div.timeline-navigation-move-left {*/
+    /*background: url('img/16/moveleft.png') no-repeat center;*/
+/*}*/
+
+/*div.timeline-navigation-move-right {*/
+    /*background: url('img/16/moveright.png') no-repeat center;*/
+/*}*/
