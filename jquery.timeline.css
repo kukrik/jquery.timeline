@@ -7,27 +7,27 @@
 }
 
 .ui-timeline-frame {
-    /*border: 1px solid #BEBEBE;*/
     overflow: hidden;
 }
 
 .ui-timeline-axis {
-    /*border-color: #BEBEBE;*/
     border-width: 1px;
-    border-top-style: solid;
+    border-top-style: groove;
 }
+
 .ui-timeline-axis-grid {
-    border-left-style: solid;
+    border-left-style: groove;
     border-width: 1px;
 }
+
 .ui-timeline-axis-grid-minor {
-    /*border-color: #e5e5e5;*/
 }
+
 .ui-timeline-axis-grid-major {
-    /*border-color: #bfbfbf;*/
 }
+
 .ui-timeline-axis-text {
-    /*color: #4D4D4D;*/
+    font-size: 0.8em;
     padding: 3px;
     white-space: nowrap;
 }
@@ -43,32 +43,19 @@
 }
 
 .ui-timeline-event-selected {
-    /*border-color: #FFC200;*/
-    /*background-color: #FFF785;*/
-    /*z-index: 999;*/
 }
-
 
 .ui-timeline-event-box {
     text-align: center;
-    /*border-style: solid;*/
-    /*border-width: 1px;*/
-    /*border-radius: 5px;*/
-    /*-moz-border-radius: 5px; *//* For Firefox 3.6 and older */
 }
 
 .ui-timeline-event-dot {
-    border-style: solid;
-    border-width: 5px;
+    border: 5px solid;
     border-radius: 5px;
-    -moz-border-radius: 5px;  /* For Firefox 3.6 and older */
+    -moz-border-radius: 5px; /* For Firefox 3.6 and older */
 }
 
 .ui-timeline-event-range {
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 2px;
-    -moz-border-radius: 2px;  /* For Firefox 3.6 and older */
 }
 
 .ui-timeline-event-range-drag-left {
@@ -81,10 +68,8 @@
     z-index: 1000;
 }
 
-
 .ui-timeline-event-line {
-    border-left-width: 1px;
-    border-left-style: solid;
+    border-left: 1px solid;
 }
 
 .ui-timeline-event-content {
@@ -96,17 +81,17 @@
 }
 
 .ui-timeline-groups-axis {
-    /*border-color: #BEBEBE;*/
-    border-width: 1px;
+    border: 1px groove;
 }
+
 .ui-timeline-groups-text {
-    /*color: #4D4D4D;*/
     padding-left: 10px;
     padding-right: 10px;
+    font-size: 0.8em;
 }
 
 .ui-timeline-currenttime {
-    background-color: #FF7F6E;
+    background-color: #FF2A27;
     width: 2px;
 }
 
@@ -117,52 +102,38 @@
 }
 
 .ui-timeline-navigation {
-    /*font-family: arial;*/
-    font-size: 20px;
-    font-weight: bold;
-    /*color: gray;*/
 
-    /*border: 1px solid #BEBEBE;*/
-    /*background-color: #F5F5F5;*/
-    border-radius: 2px;
-    -moz-border-radius: 2px;  /* For Firefox 3.6 and older */
 }
 
 .ui-timeline-navigation-new, .ui-timeline-navigation-delete,
-.ui-timeline-navigation-zoom-in,  .ui-timeline-navigation-zoom-out,
+.ui-timeline-navigation-zoom-in, .ui-timeline-navigation-zoom-out,
 .ui-timeline-navigation-move-left, .ui-timeline-navigation-move-right {
     cursor: pointer;
-    padding: 10px 10px;
+    padding: 5px 5px;
     float: left;
     text-decoration: none;
-    /*border-color: #BEBEBE; *//* border is used for the separator between new and navigation buttons */
-
-    width: 16px;
-    height: 16px;
 }
 
-/*div.timeline-navigation-new {*/
-    /*background: url('img/16/new.png') no-repeat center;*/
-/*}*/
+.ui-timeline-navigation-new {
 
-/*div.timeline-navigation-delete {*/
-    /*padding: 0px;*/
-    /*padding-left: 5px;*/
-    /*background: url('img/16/delete.png') no-repeat center;*/
-/*}*/
+}
 
-/*div.timeline-navigation-zoom-in {*/
-    /*background: url('img/16/zoomin.png') no-repeat center;*/
-/*}*/
+.ui-timeline-navigation-delete {
+    padding: 0px 0px 0px 5px;
+}
 
-/*div.timeline-navigation-zoom-out {*/
-    /*background: url('img/16/zoomout.png') no-repeat center;*/
-/*}*/
+.ui-timeline-navigation-zoom-in {
 
-/*div.timeline-navigation-move-left {*/
-    /*background: url('img/16/moveleft.png') no-repeat center;*/
-/*}*/
+}
 
-/*div.timeline-navigation-move-right {*/
-    /*background: url('img/16/moveright.png') no-repeat center;*/
-/*}*/
+.ui-timeline-navigation-zoom-out {
+
+}
+
+.ui-timeline-navigation-move-left {
+
+}
+
+.ui-timeline-navigation-move-right {
+
+}
