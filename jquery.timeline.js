@@ -26,7 +26,7 @@
 (function ($) {
     /* Public Methods */
     var methods = {
-        timeline : undefined,
+        timeline:undefined,
         /**
          *
          * @param options
@@ -46,14 +46,16 @@
         addEvent:function (type, callback) {
             var _self = this;
             return this.each(function () {
-                links.events.addListener(timeline, 'select', function () {
-                    var selection = timeline.getSelection();
-                    if (selection.length) {
-                        if (selection[0].row != undefined) {
-                            callback(timeline.getItem(selection[0].row));
+                if (type == 'select') {
+                    links.events.addListener(timeline, 'select', function () {
+                        var selection = timeline.getSelection();
+                        if (selection.length) {
+                            if (selection[0].row != undefined) {
+                                callback(timeline.getItem(selection[0].row));
+                            }
                         }
-                    }
-                });
+                    });
+                }
             });
         }
     };
@@ -2180,7 +2182,7 @@
                 navBar.addButton.className = "ui-timeline-navigation-new";
 
                 var addIconSpan = document.createElement("SPAN");
-                addIconSpan.className="ui-icon ui-icon-circle-plus";
+                addIconSpan.className = "ui-icon ui-icon-circle-plus";
                 navBar.addButton.appendChild(addIconSpan);
 
                 navBar.addButton.title = "Create new event";
@@ -2242,7 +2244,7 @@
                 navBar.zoomInButton.className = "ui-timeline-navigation-zoom-in";
                 navBar.zoomInButton.title = "Zoom in";
                 var ziIconSpan = document.createElement("SPAN");
-                ziIconSpan.className="ui-icon ui-icon-circle-zoomin";
+                ziIconSpan.className = "ui-icon ui-icon-circle-zoomin";
                 navBar.zoomInButton.appendChild(ziIconSpan);
 
                 var onZoomIn = function (event) {
@@ -2260,7 +2262,7 @@
                 navBar.zoomOutButton.className = "ui-timeline-navigation-zoom-out";
                 navBar.zoomOutButton.title = "Zoom out";
                 var zoIconSpan = document.createElement("SPAN");
-                zoIconSpan.className="ui-icon ui-icon-circle-zoomout";
+                zoIconSpan.className = "ui-icon ui-icon-circle-zoomout";
                 navBar.zoomOutButton.appendChild(zoIconSpan);
                 var onZoomOut = function (event) {
                     links.Timeline.preventDefault(event);
@@ -2277,7 +2279,7 @@
                 navBar.moveLeftButton.className = "ui-timeline-navigation-move-left";
                 navBar.moveLeftButton.title = "Move left";
                 var mlIconSpan = document.createElement("SPAN");
-                mlIconSpan.className="ui-icon ui-icon-circle-arrow-w";
+                mlIconSpan.className = "ui-icon ui-icon-circle-arrow-w";
                 navBar.moveLeftButton.appendChild(mlIconSpan);
                 var onMoveLeft = function (event) {
                     links.Timeline.preventDefault(event);
@@ -2294,7 +2296,7 @@
                 navBar.moveRightButton.className = "ui-timeline-navigation-move-right";
                 navBar.moveRightButton.title = "Move right";
                 var mrIconSpan = document.createElement("SPAN");
-                mrIconSpan.className="ui-icon ui-icon-circle-arrow-e";
+                mrIconSpan.className = "ui-icon ui-icon-circle-arrow-e";
                 navBar.moveRightButton.appendChild(mrIconSpan);
 
                 var onMoveRight = function (event) {
