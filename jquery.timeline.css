@@ -27,7 +27,7 @@
 }
 
 .ui-timeline-axis-text {
-    font-size: 0.8em;
+    font-size: 1em;
     padding: 3px;
     white-space: nowrap;
 }
@@ -76,7 +76,7 @@
     margin: 5px;
     white-space: nowrap;
     font-weight: normal;
-    font-size: 0.8em;
+    font-size: 1em;
     overflow: hidden;
 }
 
@@ -87,7 +87,7 @@
 .ui-timeline-groups-text {
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 .ui-timeline-currenttime {
